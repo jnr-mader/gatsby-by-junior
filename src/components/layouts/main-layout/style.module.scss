@@ -1,0 +1,37 @@
+.wrap {
+    display: flex;
+    padding: 0 30px;
+    justify-content: center;
+
+    &.top {
+        position: relative;
+        background-color: aqua;
+    }
+    &.top::after {
+        position: absolute;
+        display: flex;
+        content: "";
+        bottom: -500px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 500px solid aqua;
+        border-right: 900px solid transparent;
+    }
+    &.end {
+        background-color: aqua;
+        .innerwrap {
+            justify-content: flex-start; 
+        }
+    }
+}
+
+.innerwrap {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1055px;  
+    width: 100%;
+    justify-content: space-between; 
+}
