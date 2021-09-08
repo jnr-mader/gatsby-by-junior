@@ -6,6 +6,9 @@
     &.top {
         position: relative;
         background-color: aqua;
+        .innerwrap {
+            justify-content: flex-end; 
+        }
     }
     &.top::after {
         position: absolute;
