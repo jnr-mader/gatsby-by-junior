@@ -21,3 +21,27 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "content/about.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - {label: 'Body', name: 'body', widget: 'markdown'}
+      - label: "Work Page"
+        name: "work"
+        file: "content/work.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Work
+            name: work
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Position, name: position, widget: string}
+              - {label: Photo, name: photo, widget: image}
+              - {label: 'Body', name: 'body', widget: 'markdown'}
