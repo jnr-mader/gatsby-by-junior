@@ -1,3 +1,6 @@
 title: About page
 intro: This is my About page, Hurray
-body: And this is the body, double Hurray
+body: |-
+  And this is the body, double Hurray
+
+  Ok
