@@ -20,12 +20,15 @@
         border-top: 500px solid aqua;
         border-right: 900px solid transparent;
     }
+    &.mid {
+        min-height: calc(100vh - 120px);
+    }
     &.end {
         background-color: aqua;
         .innerwrap {
             justify-content: flex-start; 
         }
-    }
+    }    
 }
 
 .innerwrap {
