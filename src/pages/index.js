@@ -6,7 +6,7 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="Home">
       <main className={content}>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque pulvinar tellus, a ultrices ipsum maximus at. Donec non dolor dignissim, finibus massa non, efficitur elit. Fusce elementum tellus nulla, in consectetur quam porta et. Donec bibendum, neque eu cursus tincidunt, nulla leo lacinia tortor, eu blandit eros massa ut orci. Cras maximus augue et ligula egestas, quis auctor libero lobortis. Vestibulum vestibulum at magna a laoreet. Vivamus porta varius mi vel lacinia. In pharetra et libero id luctus.</p>
+        <p>Lorem ipsum dolor sit amet, Boyo consectetur adipiscing elit. Donec pellentesque pulvinar tellus, a ultrices ipsum maximus at. Donec non dolor dignissim, finibus massa non, efficitur elit. Fusce elementum tellus nulla, in consectetur quam porta et. Donec bibendum, neque eu cursus tincidunt, nulla leo lacinia tortor, eu blandit eros massa ut orci. Cras maximus augue et ligula egestas, quis auctor libero lobortis. Vestibulum vestibulum at magna a laoreet. Vivamus porta varius mi vel lacinia. In pharetra et libero id luctus.</p>
         <figure>
           <img src="https://picsum.photos/seed/picsum/800/300" alt="Elephant at sunset" />
           <figcaption>Caption for the image</figcaption>
