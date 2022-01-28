@@ -11,6 +11,7 @@ const AboutPage = ({data}) => {
             <h1>hello :{data.site.siteMetadata.title}</h1>
             <h1>{AboutYaml.title}</h1>
             <h1>{AboutYaml.intro}</h1>
+            <div>{AboutYaml.body}</div>
         </main>
     </Layout>    
   )
