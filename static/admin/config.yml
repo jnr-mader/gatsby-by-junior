@@ -41,7 +41,11 @@ collections:
             name: work
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
               - {label: Position, name: position, widget: string}
+              - {label: Company, name: company, widget: string} 
+              - {label: Url, name: url, widget: string} 
+              - {label: Dates, name: dates, widget: string}            
               - {label: Photo, name: photo, widget: image}
-              - {label: 'Body', name: 'body', widget: 'markdown'}
+              - {label: Description, name: 'description', widget: "select", multiple: true, options: ["HTML5", "CSS3", "SASS", "JavaScript", "React", "Angular", "jQuery", "Node", "Git", "Asp.NET"]}
+              - {label: Code base, name: 'code base', widget: "select", multiple: true, options: ["Photoshop", "Illustrator", "Invision", "Zeplin"]}
+              
