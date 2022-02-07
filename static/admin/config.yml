@@ -31,6 +31,14 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
           - {label: 'Body', name: 'body', widget: 'markdown'}
+          - label: Highlights
+            name: highlights
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: string} 
+              - {label: Photo, name: photo, widget: image}
+              - {label: Type, name: 'type', widget: "select", multiple: false, options: ["Dev", "Sites", "Movies", "Music"]}
       - label: "Work Page"
         name: "work"
         file: "content/work.yml"
