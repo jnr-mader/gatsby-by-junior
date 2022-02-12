@@ -2,15 +2,13 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../../components/layouts/main-layout';
 import AboutYaml from '../../../content/about.yml';
+import { content } from '../style/style.module.scss';
 import { infoBlocks, infoBlock, imgContainer, innerSkew, textContainer } from './style.module.scss';
 
 const AboutPage = ({data}) => {
   return (
     <Layout pageTitle="About Me">
-        <main>
-            <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
-            <h1>hello :{data.site.siteMetadata.title}</h1>
-            <h1>{AboutYaml.title}</h1>
+        <main className={content}>
             <h1>{AboutYaml.intro}</h1>
             <div>{AboutYaml.body}</div>
             <div className={infoBlocks}>
