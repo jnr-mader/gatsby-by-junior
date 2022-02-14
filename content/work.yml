@@ -3,3 +3,118 @@ intro: |-
   This is my work page, Hurray
 
   Okie dokey
+work:
+  - position: Junior Developer
+    company: Net Communities
+    dates: Feb 2010 to Jun 2010
+    photo: /img/netcom-f.png
+    description: >-
+      <!--StartFragment-->
+
+
+      Site development and maintenance. Cross-browser compatibility. Html, Css, jQuery troubleshooting, image optimization.
+
+
+      <!--EndFragment-->
+    code base:
+      - HTML5
+      - CSS3
+      - JavaScript
+      - jQuery
+      - Photoshop
+    url: google.com
+  - position: Junior Developer
+    company: Go City Girl
+    dates: Sept 2010 to Jun 2011
+    photo: /img/gcg-f.png
+    description: >-
+      <!--StartFragment-->
+
+
+      Site development and maintenance. Cross-browser compatibility. Html newsletters. Site takeovers for marketing events. Creation of promotional sites.
+
+
+      <!--EndFragment-->
+    code base:
+      - HTML5
+      - CSS3
+      - jQuery
+      - Photoshop
+      - Illustrator
+    url: google.com
+  - position: Support Developer
+    company: Perform
+    url: https://www.statsperform.com/
+    dates: Jun 2011 to Mar 2013
+    photo: /img/perform-f.png
+    description: >-
+      <!--StartFragment-->
+
+
+      Site development and maintenance for Premiership and Championship football teams. Live radio and video stream management. Cross-browser compatibility. Html, Css, jQuery troubleshooting.
+
+
+      \- Yearly site rebuilds for Premiership and Championship football teams
+
+
+      \- Worked within Perform’s custom cms
+
+
+      <!--EndFragment-->
+    code base:
+      - HTML5
+      - CSS3
+      - JavaScript
+      - jQuery
+      - Photoshop
+  - position: Front End Developer
+    company: Webigence
+    url: https://www.webigence.com/
+    dates: Mar 2013 to Oct 2015
+    photo: /img/webby-f.png
+    description: >-
+      <!--StartFragment-->
+
+
+      Site development and maintenance within a .NET environment. Responsive design and development i.e. tablets and mobiles. Cross-browser compatibility and site optimization, training, A/B testing.
+
+
+      <!--EndFragment-->
+    code base:
+      - HTML5
+      - CSS3
+      - SASS
+      - JavaScript
+      - jQuery
+      - Angular
+      - Asp.NET
+      - Photoshop
+      - Illustrator
+  - position: Front End Developer
+    dates: " Oct 2015 to Now"
+    description: >-
+      <!--StartFragment-->
+
+
+      Provide support for the marketing and content team of Pinnacle online bookmakers. Site development and maintenance within a .NET environment. Responsive design and development i.e. tablets and mobiles. Cross-browser compatibility and site optimization, training.
+
+
+      <!--EndFragment-->
+    photo: /img/pinny-f.png
+    url: https://www.pinnacle.com/en/
+    company: Willowbreeze / Pinnacle
+    code base:
+      - HTML5
+      - CSS3
+      - JavaScript
+      - jQuery
+      - Angular
+      - React
+      - SASS
+      - Asp.NET
+      - Git
+      - Node
+      - Photoshop
+      - Illustrator
+      - Zeplin
+      - Invision
