@@ -1,6 +1,12 @@
 title: About page
-intro: This is my About page, Hurray
-body: |-
-  And this is the body, double Hurray
-
-  Ok ok, let's get started
+intro: Welcome to the world of ME!!!
+body: Just a quick look at some of the things I like.
+highlights:
+  - title: html 5
+    description: Who doesn't love this.
+    type: Dev
+    photo: /img/html5-original.svg
+  - title: css 3
+    description: Nothing better
+    photo: /img/css3-original.svg
+    type: Dev
