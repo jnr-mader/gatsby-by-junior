@@ -51,9 +51,9 @@ collections:
             fields:
               - {label: Position, name: position, widget: string}
               - {label: Company, name: company, widget: string} 
-              - {label: Url, name: url, widget: string} 
+              - {label: Url, name: url, widget: string, required: false} 
               - {label: Dates, name: dates, widget: string}            
               - {label: Photo, name: photo, widget: image}
-              - {label: Description, name: 'description', widget: "select", multiple: true, options: ["HTML5", "CSS3", "SASS", "JavaScript", "React", "Angular", "jQuery", "Node", "Git", "Asp.NET"]}
-              - {label: Code base, name: 'code base', widget: "select", multiple: true, options: ["Photoshop", "Illustrator", "Invision", "Zeplin"]}
+              - {label: Description, name: description, widget: markdown} 
+              - {label: Code base, name: 'codebase', widget: "select", multiple: true, options: ["Photoshop", "Illustrator", "Invision", "Zeplin","HTML5", "CSS3", "SASS", "JavaScript", "React", "Angular", "jQuery", "Node", "Git", "Asp.NET"]}
               

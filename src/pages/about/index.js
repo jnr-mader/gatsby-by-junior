@@ -12,116 +12,27 @@ const AboutPage = ({data}) => {
         <main className={content}>
             <h1>{AboutYaml.intro}</h1>
             <div>{AboutYaml.body}</div>
-            <div>
-              {AboutYaml.highlights.map((item)=>item.title)}
-            </div>
+            
             <h1>hello :{data.site.siteMetadata.title}</h1>
             <div className={infoBlocks}>
-              <div className={infoBlock}>
+
+            {AboutYaml.highlights.map((item, index)=>{
+              return (
+                <div key={index} className={infoBlock}>
                 <div className={imgContainer}>
                   <div className="img-inner">
                     <div className={innerSkew}>
-                      <img src="https://picsum.photos/300"/>
+                      <img src={item.photo} alt={item.title}/>
                     </div>
                   </div>
                 </div>
                 <div class={textContainer}>
-                  <h3>A blue bird</h3>
-                  <div>
-                    This a demo experiment to skew image container. It looks good.
-                  </div>
+                  <h3>{item.title}</h3>
+                  <div>{item.description}</div>
                 </div>
               </div>
-              <div className={infoBlock}>
-                <div className={imgContainer}>
-                  <div className="img-inner">
-                    <div className={innerSkew}>
-                      <img src="https://picsum.photos/300"/>
-                    </div>
-                  </div>
-                </div>
-                <div class={textContainer}>
-                  <h3>A blue bird</h3>
-                  <div>
-                    This a demo experiment to skew image container. It looks good.
-                  </div>
-                </div>
-              </div>
-              <div className={infoBlock}>
-                <div className={imgContainer}>
-                  <div className="img-inner">
-                    <div className={innerSkew}>
-                      <img src="https://picsum.photos/300"/>
-                    </div>
-                  </div>
-                </div>
-                <div class={textContainer}>
-                  <h3>A blue bird</h3>
-                  <div>
-                    This a demo experiment to skew image container. It looks good.
-                  </div>
-                </div>
-              </div>
-              <div className={infoBlock}>
-                <div className={imgContainer}>
-                  <div className="img-inner">
-                    <div className={innerSkew}>
-                      <img src="https://picsum.photos/300"/>
-                    </div>
-                  </div>
-                </div>
-                <div class={textContainer}>
-                  <h3>A blue bird</h3>
-                  <div>
-                    This a demo experiment to skew image container. It looks good.
-                  </div>
-                </div>
-              </div>
-              <div className={infoBlock}>
-                <div className={imgContainer}>
-                  <div className="img-inner">
-                    <div className={innerSkew}>
-                      <img src="https://picsum.photos/300"/>
-                    </div>
-                  </div>
-                </div>
-                <div class={textContainer}>
-                  <h3>A blue bird</h3>
-                  <div>
-                    This a demo experiment to skew image container. It looks good.
-                  </div>
-                </div>
-              </div>
-              <div className={infoBlock}>
-                <div className={imgContainer}>
-                  <div className="img-inner">
-                    <div className={innerSkew}>
-                      <img src="https://picsum.photos/300"/>
-                    </div>
-                  </div>
-                </div>
-                <div class={textContainer}>
-                  <h3>A blue bird</h3>
-                  <div>
-                    This a demo experiment to skew image container. It looks good.
-                  </div>
-                </div>
-              </div>
-              <div className={infoBlock}>
-                <div className={imgContainer}>
-                  <div className="img-inner">
-                    <div className={innerSkew}>
-                      <img src="https://picsum.photos/300"/>
-                    </div>
-                  </div>
-                </div>
-                <div class={textContainer}>
-                  <h3>A blue bird</h3>
-                  <div>
-                    This a demo experiment to skew image container. It looks good.
-                  </div>
-                </div>
-              </div>
+                )              
+            })}
             </div>
         </main>
     </Layout>    
