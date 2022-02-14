@@ -13,7 +13,7 @@ const AboutPage = ({data}) => {
             <h1>{AboutYaml.intro}</h1>
             <div>{AboutYaml.body}</div>
             <div>
-              {AboutYaml.highlights}
+              {AboutYaml.highlights.map((item)=>item.title)}
             </div>
             <h1>hello :{data.site.siteMetadata.title}</h1>
             <div className={infoBlocks}>
