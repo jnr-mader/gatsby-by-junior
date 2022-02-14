@@ -6,11 +6,16 @@ import { content } from '../style/style.module.scss';
 import { infoBlocks, infoBlock, imgContainer, innerSkew, textContainer } from './style.module.scss';
 
 const AboutPage = ({data}) => {
+  console.log(data)
   return (
     <Layout pageTitle="About Me">
         <main className={content}>
             <h1>{AboutYaml.intro}</h1>
             <div>{AboutYaml.body}</div>
+            <div>
+              {AboutYaml.highlights}
+            </div>
+            <h1>hello :{data.site.siteMetadata.title}</h1>
             <div className={infoBlocks}>
               <div className={infoBlock}>
                 <div className={imgContainer}>

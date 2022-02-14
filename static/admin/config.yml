@@ -31,9 +31,9 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
           - {label: 'Body', name: 'body', widget: 'markdown'}
-          - label: Highlights
-            name: highlights
-            widget: list
+          - label: "Highlights"
+            name: "highlights"
+            widget: "list"
             fields:
               - {label: Title, name: title, widget: string}
               - {label: Description, name: description, widget: string} 
@@ -45,9 +45,9 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
-          - label: Work
-            name: work
-            widget: list
+          - label: "Work"
+            name: "work"
+            widget: "list"
             fields:
               - {label: Position, name: position, widget: string}
               - {label: Company, name: company, widget: string} 
