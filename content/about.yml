@@ -10,3 +10,7 @@ highlights:
     description: Nothing better
     photo: /img/css3-original.svg
     type: Dev
+  - title: javascript
+    description: ties them all together
+    photo: /img/javascript-original.svg
+    type: Dev
