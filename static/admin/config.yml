@@ -41,7 +41,7 @@ collections:
               - {label: Type, name: 'type', widget: "select", multiple: false, options: ["Dev", "Sites", "Movies", "Music"]}
       - label: "Work Page"
         name: "work"
-        file: "content/work.md"
+        file: "content/work.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
