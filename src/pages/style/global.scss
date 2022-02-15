@@ -43,26 +43,28 @@ p a {
 
 figure {
     position: relative;
-    margin: 0;
+    margin: 0 auto 40px;
     width: auto;
-  }
-  
-  figure::after {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 50px;
-    height: 50px;
-    bottom: -15px;
-    right: -15px;
-    border-bottom: 2px solid fuchsia;
-    border-right: 2px solid fuchsia; 
-  }
-  
-  figcaption {  
+    &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        bottom: -15px;
+        right: -15px;
+        border-bottom: 2px solid fuchsia;
+        border-right: 2px solid fuchsia; 
+      }
+    img {
+        width: 100%;
+    }
+}
+    
+figcaption {  
     padding: 3px 5px;
     background-color: fuchsia;
     font-size: 11px;
     color: #fff;    
     text-transform: uppercase;
-  }
+}
