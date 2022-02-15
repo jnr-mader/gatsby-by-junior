@@ -2,7 +2,7 @@ import * as React from 'react';
 import Layout from '../../components/layouts/main-layout';
 import WorkYaml from '../../../content/work.yml';
 import { content } from '../style/style.module.scss';
-import { workHeader } from './style.module.scss';
+import { workHeader, codeBaseList } from './style.module.scss';
 
 const WorkPage = () => {
   return (
@@ -18,9 +18,16 @@ const WorkPage = () => {
                     <img src={item.photo} alt={item.company} />
                     <figcaption>{item.company}</figcaption>
                   </figure> 
-                  {item.description} 
-                  <div>
-                    Code base: {item.codebase}
+                  <div>{item.description} </div>
+                  <div className={codeBaseList}>
+                    <span>Code base:</span> 
+                    <ul>
+                      {item.codebase.map((code, index)=>{
+                        return (
+                          <li key={index}>{code}</li>
+                        )
+                      })}
+                    </ul>
                   </div>
                 </section>  
               )              
