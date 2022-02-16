@@ -14,3 +14,43 @@ highlights:
     description: ties them all together
     photo: /img/javascript-original.svg
     type: Dev
+  - title: react
+    description: the not so new shiny
+    photo: /img/react-original.svg
+    type: Dev
+  - title: sass
+    description: css with some sugar on top
+    photo: /img/sass-original.svg
+    type: Dev
+  - title: akira
+    description: manga manga
+    photo: /img/akira.jpg
+    type: Movies
+  - title: annabelle
+    description: creepy dolls rules
+    photo: /img/annabelle.jpg
+    type: Movies
+  - title: archer
+    description: better than bond
+    photo: /img/archer.jpg
+    type: Movies
+  - title: trailer park boys
+    description: the boys are back
+    photo: /img/trailerpark.png
+    type: Movies
+  - title: the prodigy
+    description: breathe
+    photo: /img/theprodigy.jpg
+    type: Music
+  - title: super cat
+    description: original don dada
+    photo: /img/supercat.jpg
+    type: Music
+  - title: system of a down
+    photo: /img/soad.jpg
+    description: angels deserve to die
+    type: Music
+  - title: star wars
+    description: the dark side is better
+    photo: /img/starwars.jpg
+    type: Movies
