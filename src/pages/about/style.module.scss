@@ -11,6 +11,11 @@
         justify-content: space-between;
         align-items: center;
         text-align: center;
+        &:hover{
+            .imgContainer img {
+                transform: skew(0deg,-13deg) scale(1.5);
+            }
+        }
 
         .imgContainer {
             width: 90%;
@@ -19,7 +24,14 @@
             border-radius: 0px 0px 10px 10px;
             display: inline-block;
             img {
-                transform: skew(0deg, -13deg);                
+                position: absolute;
+                margin: auto;
+                top: -30px;
+                left: -50%;
+                right: -50%;
+                height: 160%;    
+                transform: skew(0deg, -13deg); 
+                transition: all .5s;               
             }
         }
             
