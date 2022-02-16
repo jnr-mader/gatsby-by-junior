@@ -18,7 +18,7 @@ const AboutPage = ({data}) => {
 
             {AboutYaml.highlights.map((item, index)=>{
               return (
-                <div key={index} className={infoBlock}>
+                <div key={index} className={infoBlock} data-type={item.type}>
                 <div className={imgContainer}>
                   <div className="img-inner">
                     <div className={innerSkew}>

@@ -25,7 +25,7 @@ const Layout = ({ pageTitle, children }) => {
 
       <div className={classNames(wrap, end)}>
         <div className={innerwrap}>
-          <p>Made by me using <a href="#">Netlify</a> and <a href="#">Some cms</a></p>
+          <p>Made by me using <a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer">Gatsby</a> and <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a></p>
         </div>
       </div>
     </>
