@@ -5,9 +5,6 @@
     &.top {
         position: relative;
         background-color: aqua;
-        .innerwrap {
-            justify-content: flex-end; 
-        }
     }
     &.top::after {
         position: absolute;
@@ -17,7 +14,7 @@
         left: 0;
         width: 0;
         height: 0;
-        border-top: 52vh solid aqua;
+        border-top: 500px solid aqua;
         border-right: 65vw solid transparent;
     }
     &.mid {
@@ -38,4 +35,10 @@
     max-width: 1200px;  
     width: 100%;
     justify-content: space-between; 
+}
+
+.siteTitle {
+    @media only screen and (max-width: 1020px) {
+        margin: 0 0 0 85px;
+    }
 }
