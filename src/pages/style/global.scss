@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'B612 Mono', cursive;
+    font-family: 'B612 Mono', 'Arial';
     font-size: 16px;
 }
 
@@ -11,16 +11,16 @@ h2 {
     position: relative;
     margin: 0;
     padding: 0;
-    font-family: 'Tourney', cursive;
-    font-size: 60px;
+    font-family: 'Tourney', 'Arial';
+    font-size: 45px;
     color: #fff;
     text-transform: uppercase;  
-    bottom: -18px;
-    text-shadow: 4px 4px fuchsia;
+    top: 24px;
+    text-shadow: 4px 4px aqua;
     z-index: 1;
     @media only screen and (max-width: 1020px) {
-        font-size: 40px;
-    }
+        font-size: 35px;
+        top: 28px;    }
 }
 
 li {
