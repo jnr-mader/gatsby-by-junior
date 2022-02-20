@@ -2,9 +2,18 @@
     display: flex;
     padding: 0 30px;
     justify-content: center;
+    @media only screen and (max-width: 1020px) {
+        padding: 0 15px;
+    }
     &.top {
         position: relative;
         background-color: aqua;
+        @media only screen and (max-width: 1020px) {
+            margin: 0 0 50px;
+        }
+        @media only screen and (max-width: 575px) {
+            margin: 0 0 100px;
+        }
     }
     &.top::after {
         position: absolute;
@@ -43,6 +52,10 @@
     text-shadow: 4px 4px #000;
     @media only screen and (max-width: 1020px) {
         margin: 0 0 0 85px;
+    }
+    @media only screen and (max-width: 575px) {
+        margin: 0;
+        top: 17px;
     }
     span {
         position: absolute;
