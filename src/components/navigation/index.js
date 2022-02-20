@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useState } from 'react';
+import { useStaticQuery, graphql } from "gatsby"
 import { navi, open, close } from './style.module.scss'
 import { Link } from 'gatsby'
 
@@ -35,15 +36,29 @@ const Navigation = () => {
         }   
     })()
 
+    const data = useStaticQuery(graphql`
+        query LivePages {
+            allSitePage(
+                filter: {id: {nin: ["SitePage /", "SitePage /dev-404-page/", "SitePage /404.html", "SitePage /404/"]}}
+            ) {
+                nodes {
+                    path
+                }
+            }
+        }      
+    `)  
 
     return (
         <nav className={`${navi} ${isActive ? open : ""}`} onClick={handleToggle}>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/work">Work</Link></li>
+            {data.allSitePage.nodes.map((item, index)=>{                
+                return (
+                    <li key={index}><Link to={item.path}>{item.path.replace(/\//g, '')}</Link></li>
+                )
+            })}
             <li className={close}><a href='#' onClick={handleToggle}>Close</a></li>
         </nav> 
     )
-  }
+}
   
-  export default Navigation;
+export default Navigation;

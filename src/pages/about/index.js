@@ -4,13 +4,13 @@ import AboutYaml from '../../../content/about.yml';
 import { content } from '../style/style.module.scss';
 import { infoBlocks, infoBlock, imgContainer, innerSkew, textContainer } from './style.module.scss';
 
-const AboutPage = ({data}) => {
-  console.log(data)
+const AboutPage = () => {
   return (
     <Layout pageTitle="About Me">
         <main className={content}>
             <h1>{AboutYaml.intro}</h1>
             <div>{AboutYaml.body}</div>
+            
             <div className={infoBlocks}>
 
             {AboutYaml.highlights.map((item, index)=>{
