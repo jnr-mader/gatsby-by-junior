@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { graphql } from 'gatsby';
 import Layout from '../../components/layouts/main-layout';
 import AboutYaml from '../../../content/about.yml';
 import { content } from '../style/style.module.scss';
@@ -12,8 +11,6 @@ const AboutPage = ({data}) => {
         <main className={content}>
             <h1>{AboutYaml.intro}</h1>
             <div>{AboutYaml.body}</div>
-            
-            <h1>hello :{data.site.siteMetadata.title}</h1>
             <div className={infoBlocks}>
 
             {AboutYaml.highlights.map((item, index)=>{
@@ -38,15 +35,5 @@ const AboutPage = ({data}) => {
     </Layout>    
   )
 }
-
-export const query = graphql`
-  query AboutPageQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
 
 export default AboutPage;

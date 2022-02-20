@@ -8,7 +8,8 @@ const WorkPage = () => {
   return (
     <Layout pageTitle="My Work">
         <main className={content}>
-          <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
+          <h1>{WorkYaml.intro}</h1>
+          <div>{WorkYaml.body}</div>
 
           {WorkYaml.work.map((item, index)=>{
               return (
