@@ -1,11 +1,15 @@
 import * as React from "react";
 import Layout from "../components/layouts/main-layout";
+import HomeYaml from '../../content/home.yml';
 import { content } from './style/style.module.scss';
 
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home">
       <main className={content}>
+        <h1>intro {HomeYaml.intro}</h1>
+        <h1>body {HomeYaml.body}</h1>
+        <h1>outro {HomeYaml.outro}</h1>
         <p>Lorem ipsum dolor sit amet, Boyo consectetur adipiscing elit. Donec pellentesque pulvinar tellus, a ultrices ipsum maximus at. Donec non dolor dignissim, finibus massa non, efficitur elit. Fusce elementum tellus nulla, in consectetur quam porta et. Donec bibendum, neque eu cursus tincidunt, nulla leo lacinia tortor, eu blandit eros massa ut orci. Cras maximus augue et ligula egestas, quis auctor libero lobortis. Vestibulum vestibulum at magna a laoreet. Vivamus porta varius mi vel lacinia. In pharetra et libero id luctus.</p>
         <figure>
           <img src="https://picsum.photos/seed/picsum/800/300" alt="Elephant at sunset" />
