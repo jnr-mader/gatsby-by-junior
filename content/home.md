@@ -1,5 +1,5 @@
 ---
-title: Ok boo boo boo
+title: Home page
 intro: Lets go go go
 outro: out out out
 ---
