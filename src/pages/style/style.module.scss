@@ -14,3 +14,31 @@
         max-width: 85%;
     }
 }
+
+.skills {
+    h3 {
+        text-align: right;
+        border-bottom: 2px solid fuchsia;
+    }
+
+    .skillIcons{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        @media only screen and (max-width: 575px) {
+            justify-content: center;
+        }
+    }
+
+    figure {
+        margin: 0;
+        max-width: 70px;
+        &::after {
+            width: 10px;
+            height: 10px;
+            bottom: -5px;
+            right: -5px;
+            border-width: 1px;
+        }
+    }
+}

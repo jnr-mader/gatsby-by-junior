@@ -57,6 +57,9 @@
         margin: 0;
         top: 17px;
     }
+    a {
+        color: #fff;
+    }
     span {
         position: absolute;
         top: 0px;
@@ -73,4 +76,17 @@
             text-shadow: 4px 4px #000;
         }
     }
+}
+
+.backToTop {
+    a{        
+        @media only screen and (max-width: 575px) {
+            display: block;
+            width: 40px;
+            height: 40px;
+            font-size: 0;
+            background: url("../../../images/thin-up-arrow.svg") center transparent no-repeat;
+        } 
+    }
+       
 }

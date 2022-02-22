@@ -1,8 +1,8 @@
 import * as React from 'react';
 import classNames from 'classnames';
-
 import "../../../pages/style/global.scss";
-import { wrap, top, innerwrap, mid, end, siteTitle } from './style.module.scss';
+import { wrap, top, innerwrap, mid, end, siteTitle, backToTop } from './style.module.scss';
+import { Link } from 'gatsby'
 import Navigation from '../../navigation';
 
 const Layout = ({ pageTitle, children }) => {
@@ -17,7 +17,7 @@ const Layout = ({ pageTitle, children }) => {
 
       <div className={classNames(wrap, top)}>
         <div className={innerwrap}>
-        <h2 className={siteTitle}>jnr<span>78</span></h2><h2>{pageTitle}</h2>
+        <h2 className={siteTitle}><Link to="/">jnr<span>78</span></Link></h2><h2>{pageTitle}</h2>
         </div>
       </div>
 
@@ -31,7 +31,7 @@ const Layout = ({ pageTitle, children }) => {
       <div className={classNames(wrap, end)}>
         <div className={innerwrap}>
           <p>Made by me using <a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer">Gatsby</a> and <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a></p>
-          <p><a href='#' onClick={toTop}>back to top</a></p>
+          <p className={backToTop}><a href='#' onClick={toTop}>back to top</a></p>
         </div>
       </div>
     </>
