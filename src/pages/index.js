@@ -2,14 +2,16 @@ import * as React from "react";
 import Layout from "../components/layouts/main-layout";
 import HomeYaml from '../../content/home.yml';
 import netlify from '../images/netlify.svg'
-import { content, skills, skillIcons, intro } from './style/style.module.scss';
+import { content, skills, skillIcons, cmsText } from './style/style.module.scss';
 
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home">
       <main className={content}>
         <h2>{HomeYaml.title}</h2>
-        <div className={intro}>{HomeYaml.intro}</div>
+        <div className={cmsText}>
+          I'm <h2>Junior</h2>, a London based <h2>Frontend Developer</h2>.Welcome to <h2>Jnr78</h2>,a tiny peek into my world.
+        </div>
         <figure>
           <img src="https://picsum.photos/seed/picsum/800/300" alt="Elephant at sunset" />
           <figcaption>Caption for the image</figcaption>
@@ -89,8 +91,8 @@ const IndexPage = () => {
             </figure>
           </div>
         </div>
-        <div>{HomeYaml.body}</div>
-        <div>{HomeYaml.outro}</div>
+        <div className={cmsText}>{HomeYaml.body}</div>
+        <div className={cmsText}>{HomeYaml.outro}</div>
       </main>
     </Layout>
   )
