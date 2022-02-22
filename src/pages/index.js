@@ -2,14 +2,14 @@ import * as React from "react";
 import Layout from "../components/layouts/main-layout";
 import HomeYaml from '../../content/home.yml';
 import netlify from '../images/netlify.svg'
-import { content, skills, skillIcons } from './style/style.module.scss';
+import { content, skills, skillIcons, intro } from './style/style.module.scss';
 
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home">
       <main className={content}>
-        <div>{HomeYaml.title}</div>
-        <div>{HomeYaml.intro}</div>
+        <h2>{HomeYaml.title}</h2>
+        <div className={intro}>{HomeYaml.intro}</div>
         <figure>
           <img src="https://picsum.photos/seed/picsum/800/300" alt="Elephant at sunset" />
           <figcaption>Caption for the image</figcaption>
