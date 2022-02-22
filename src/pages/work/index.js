@@ -1,16 +1,14 @@
 import * as React from 'react';
 import Layout from '../../components/layouts/main-layout';
 import WorkYaml from '../../../content/work.yml';
-import { content } from '../style/style.module.scss';
+import { content, cmsText } from '../style/style.module.scss';
 import { workHeader, codeBaseList, description } from './style.module.scss';
 
 const WorkPage = () => {
   return (
     <Layout pageTitle="My Work">
         <main className={content}>
-          <h1>{WorkYaml.intro}</h1>
-          <div>{WorkYaml.body}</div>
-
+        <div className={cmsText}>{WorkYaml.intro}</div>
           {WorkYaml.work.map((item, index)=>{
               return (
                 <section key={index}>
