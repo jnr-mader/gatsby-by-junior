@@ -1,127 +1,6 @@
 title: Work page
-intro: |-
-  This is my work page, Hurray
-
-  Okie dokey
+intro: My complete commercial history
 work:
-  - position: Junior Developer
-    company: Net Communities
-    dates: Feb 2010 to Jun 2010
-    photo: /img/netcom-f.png
-    description: Site development and maintenance. Cross-browser compatibility. Html
-      newsletters. Site takeovers for marketing events. Creation of promotional
-      sites.
-    code base:
-      - HTML5
-      - CSS3
-      - JavaScript
-      - jQuery
-      - Photoshop
-    url: google.com
-    codebase:
-      - HTML5
-      - CSS3
-      - jQuery
-      - Photoshop
-  - position: Junior Developer
-    company: Go City Girl
-    dates: Sept 2010 to Jun 2011
-    photo: /img/gcg-f.png
-    description: >
-      Site development and maintenance. Cross-browser compatibility. Html, Css,
-      jQuery troubleshooting, image optimization.
-    code base:
-      - HTML5
-      - CSS3
-      - jQuery
-      - Photoshop
-      - Illustrator
-    url: ""
-    codebase:
-      - HTML5
-      - CSS3
-      - jQuery
-      - Photoshop
-  - position: Support Developer
-    company: Perform
-    url: https://www.statsperform.com/
-    dates: Jun 2011 to Mar 2013
-    photo: /img/perform-f.png
-    description: >-
-      Site development and maintenance for Premiership and Championship football
-      teams. Live radio and video stream management. Cross-browser
-      compatibility. Html, Css, jQuery troubleshooting.
-
-
-      \- Yearly site rebuilds for Premiership and Championship football teams
-
-
-      \- Worked within Perform’s custom cms
-    code base:
-      - HTML5
-      - CSS3
-      - JavaScript
-      - jQuery
-      - Photoshop
-    codebase:
-      - HTML5
-      - CSS3
-      - jQuery
-      - JavaScript
-      - Photoshop
-  - position: Front End Developer
-    company: Webigence
-    url: https://www.webigence.com/
-    dates: Mar 2013 to Oct 2015
-    photo: /img/webby-f.png
-    description: >-
-      Site development and maintenance for a website development studio. 
-
-
-      Working within a .NET environment my duties include responsive development, cross-browser compatibility, site optimization, training and A/B testing.
-
-
-      \- Rebuilt client websites to include responsive layouts
-
-
-      \- Mentoring a junior developer
-
-
-      \- Working hand in hand with the UX/UI designer
-
-
-      \- Worked within Webigence’s custom cms
-
-
-      matthewcox.com
-
-
-      andyhayler.com
-
-
-      travelstream.com
-
-
-      matthewcox.com
-    code base:
-      - HTML5
-      - CSS3
-      - SASS
-      - JavaScript
-      - jQuery
-      - Angular
-      - Asp.NET
-      - Photoshop
-      - Illustrator
-    codebase:
-      - HTML5
-      - CSS3
-      - jQuery
-      - JavaScript
-      - Angular
-      - SASS
-      - Asp.NET
-      - Photoshop
   - position: Front End Developer
     dates: " Oct 2015 to Now"
     description: >-
@@ -200,3 +79,121 @@ work:
       - Photoshop
       - Invision
       - Zeplin
+  - position: Front End Developer
+    company: Webigence
+    url: https://www.webigence.com/
+    dates: Mar 2013 to Oct 2015
+    photo: /img/webby-f.png
+    description: >-
+      Site development and maintenance for a website development studio. 
+
+
+      Working within a .NET environment my duties include responsive development, cross-browser compatibility, site optimization, training and A/B testing.
+
+
+      \- Rebuilt client websites to include responsive layouts
+
+
+      \- Mentoring a junior developer
+
+
+      \- Working hand in hand with the UX/UI designer
+
+
+      \- Worked within Webigence’s custom cms
+
+
+      matthewcox.com
+
+
+      andyhayler.com
+
+
+      travelstream.com
+
+
+      matthewcox.com
+    code base:
+      - HTML5
+      - CSS3
+      - SASS
+      - JavaScript
+      - jQuery
+      - Angular
+      - Asp.NET
+      - Photoshop
+      - Illustrator
+    codebase:
+      - HTML5
+      - CSS3
+      - jQuery
+      - JavaScript
+      - Angular
+      - SASS
+      - Asp.NET
+      - Photoshop
+  - position: Support Developer
+    company: Perform
+    url: https://www.statsperform.com/
+    dates: Jun 2011 to Mar 2013
+    photo: /img/perform-f.png
+    description: >-
+      Site development and maintenance for Premiership and Championship football
+      teams. Live radio and video stream management. Cross-browser
+      compatibility. Html, Css, jQuery troubleshooting.
+
+
+      \- Yearly site rebuilds for Premiership and Championship football teams
+
+
+      \- Worked within Perform’s custom cms
+    code base:
+      - HTML5
+      - CSS3
+      - JavaScript
+      - jQuery
+      - Photoshop
+    codebase:
+      - HTML5
+      - CSS3
+      - jQuery
+      - JavaScript
+      - Photoshop
+  - position: Junior Developer
+    company: Go City Girl
+    dates: Sept 2010 to Jun 2011
+    photo: /img/gcg-f.png
+    description: >
+      Site development and maintenance. Cross-browser compatibility. Html, Css,
+      jQuery troubleshooting, image optimization.
+    code base:
+      - HTML5
+      - CSS3
+      - jQuery
+      - Photoshop
+      - Illustrator
+    url: ""
+    codebase:
+      - HTML5
+      - CSS3
+      - jQuery
+      - Photoshop
+  - position: Junior Developer
+    company: Net Communities
+    dates: Feb 2010 to Jun 2010
+    photo: /img/netcom-f.png
+    description: Site development and maintenance. Cross-browser compatibility. Html
+      newsletters. Site takeovers for marketing events. Creation of promotional
+      sites.
+    code base:
+      - HTML5
+      - CSS3
+      - JavaScript
+      - jQuery
+      - Photoshop
+    url: google.com
+    codebase:
+      - HTML5
+      - CSS3
+      - jQuery
+      - Photoshop
