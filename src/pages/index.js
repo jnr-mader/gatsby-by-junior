@@ -1,8 +1,22 @@
 import * as React from "react";
 import Layout from "../components/layouts/main-layout";
 import HomeYaml from '../../content/home.yml';
-import netlify from '../images/netlify.svg'
+import WorkYaml from '../../content/work.yml';
+import netlify from '../images/netlify.svg';
+import Carousel from '../components/carousel';
 import { content, skills, skillIcons, cmsText } from './style/style.module.scss';
+
+const slideContent = [];
+
+const getSlideContent = () => {
+  WorkYaml.work.map((item, index)=>{
+    return (
+      slideContent.push({index, img: item.photo, company: item.company})
+    )              
+  })
+}
+getSlideContent()
+console.log(slideContent)
 
 const IndexPage = () => {
   return (
@@ -12,10 +26,7 @@ const IndexPage = () => {
         <div className={cmsText}>
           I'm <h2>Junior</h2>, a London based <h2>Frontend Developer</h2>.Welcome to <h2>Jnr78</h2>,a tiny peek into my world.
         </div>
-        <figure>
-          <img src="https://picsum.photos/seed/picsum/800/300" alt="Elephant at sunset" />
-          <figcaption>Caption for the image</figcaption>
-        </figure>  
+        <Carousel slideContent={slideContent} />         
         <div className={skills}>
           <h3>Over ten yrs</h3>
           <div className={skillIcons}>
