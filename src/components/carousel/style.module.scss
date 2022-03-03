@@ -2,9 +2,7 @@
     display: flex;
     margin: 0 0 30px;
     align-items: center;
-    justify-content: center;
-    background-size: cover;
-    height: 350px;
+    justify-content: center;    
 }
 
 .eachSlide span {
@@ -13,4 +11,14 @@
     font-size: 20px;
     background: fuchsia;
     text-align: center;
+}
+
+.slideImg {
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media only screen and (max-width: 575px) {
+        height: 210px;
+    }
 }
