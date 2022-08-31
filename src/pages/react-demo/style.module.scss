@@ -1,0 +1,21 @@
+.half {
+    position: relative;
+    display: flex;
+    flex: 1;
+    background-color: royalblue;
+    transition: flex-grow 2s;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        flex: 3 1 0;
+    }
+
+    &:hover .char {
+        transform: scale(1.5);
+    }
+      
+    &:hover .search {
+        opacity: 1;
+    }
+}

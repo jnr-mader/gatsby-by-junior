@@ -48,6 +48,8 @@ const Navigation = () => {
         }      
     `)  
 
+    console.log(data)
+
     return (
         <nav className={`${navi} ${isActive ? open : ""}`} onClick={handleToggle}>
             <li><Link to="/">Home</Link></li>

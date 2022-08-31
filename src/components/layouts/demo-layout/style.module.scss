@@ -1,0 +1,21 @@
+.siteTitle {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+}
+
+.demoTitle {
+    display: flex;
+    font-size: 25px;
+    align-items: end;
+}
+
+.frame {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    gap: 5px;
+    overflow: hidden;
+}

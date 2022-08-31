@@ -2,7 +2,7 @@ import * as React from 'react';
 import classNames from 'classnames';
 import "../../../pages/style/global.scss";
 import { wrap, top, innerwrap, mid, end, siteTitle, backToTop } from './style.module.scss';
-import { Link } from 'gatsby'
+import { Link } from 'gatsby';
 import Navigation from '../../navigation';
 
 const Layout = ({ pageTitle, children }) => {

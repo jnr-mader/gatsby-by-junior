@@ -62,4 +62,10 @@ collections:
               - {label: Photo, name: photo, widget: image}
               - {label: Description, name: description, widget: markdown} 
               - {label: Code base, name: 'codebase', widget: "select", multiple: true, options: ["Photoshop", "Illustrator", "Invision", "Zeplin","HTML5", "CSS3", "SASS", "JavaScript", "React", "Angular", "jQuery", "Node", "Git", "Asp.NET"]}
+      - label: "React demo"
+        name: "react-demo"
+        file: "content/react-demo.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
               
