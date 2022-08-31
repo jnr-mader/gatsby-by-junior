@@ -23,6 +23,7 @@
     "netlify-cms-app": "^2.15.38",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-search-autocomplete": "^7.2.2",
     "react-slideshow-image": "^3.7.0",
     "sass": "^1.38.0"
   }
