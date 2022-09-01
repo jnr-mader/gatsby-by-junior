@@ -1,5 +1,6 @@
 import * as React from "react";
 import { ReactSearchAutocomplete } from 'react-search-autocomplete';
+import { search, my } from './style.module.scss';
 
 const Search = ({data}) => {
     const handleOnSearch = (string, results) => {
@@ -35,8 +36,13 @@ const Search = ({data}) => {
       minMatchCharLength: 2,
     }
 
+    const styling = {
+        height: "40px",
+        borderRadius: "5px",
+    }
+
     return(
-        <div>
+        <div className={search}>
             <ReactSearchAutocomplete
               items={data}
               onSearch={handleOnSearch}
@@ -46,6 +52,8 @@ const Search = ({data}) => {
               autoFocus
             //   formatResult={formatResult}
               fuseOptions={fuseOptions}
+              styling={styling}
+              placeholder={"Search for a star"}
             />
         </div>
     )

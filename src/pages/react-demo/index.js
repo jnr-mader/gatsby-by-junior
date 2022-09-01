@@ -5,6 +5,7 @@ import { half, content, search, character } from './style.module.scss';
 import { rickAndMortyApi, finalSpaceApi } from '../../helpers/apis';
 import { ReactSearchAutocomplete } from 'react-search-autocomplete'
 import Search from "../../components/search";
+import FeatureCharacter from "../../components/feature-character";
 
 const ReactDemo = () => {
   const [finalSpaceData, setFinalSpaceData] = useState([]);
@@ -57,10 +58,8 @@ const ReactDemo = () => {
           <div className={search}>
             <Search data={rickAndMortyData} />
           </div> 
-          <div className={character} onClick={(e) => callNewRandomCharacter("rickAndMorty")}>
-            <img src={randomStarRickAndMorty.image} />
-            <h2>{randomStarRickAndMorty.name}</h2>
-          </div>
+          <FeatureCharacter name={randomStarRickAndMorty.name} image={randomStarRickAndMorty.image} />
+          <button onClick={(e) => callNewRandomCharacter("rickAndMorty")}>Select random star</button>
         </div>        
       </div>
 
@@ -69,10 +68,8 @@ const ReactDemo = () => {
           <div className={search}>
             <Search data={finalSpaceData} />
           </div>
-          <div className={character} onClick={(e) => callNewRandomCharacter("finalSpace")}>
-            <img src={randomStarFinalSpace.img_url} />
-            <h2>{randomStarFinalSpace.name}</h2>
-          </div>
+          <FeatureCharacter name={randomStarFinalSpace.name} image={randomStarFinalSpace.img_url} />
+          <button onClick={(e) => callNewRandomCharacter("finalSpace")}>Select random star</button>
         </div>        
       </div>
     </Layout>    

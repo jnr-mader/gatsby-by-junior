@@ -1,11 +1,12 @@
 .half {
     position: relative;
     display: flex;
-    flex: 1;
+    flex: 1 1;
+    padding: 100px 30px 30px;
     background-color: royalblue;
     transition: flex-grow 2s;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 
     &:hover {
         flex: 3 1 0;
