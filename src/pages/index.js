@@ -16,8 +16,6 @@ const getSlideContent = () => {
   })
 }
 getSlideContent()
-console.log(slideContent)
-
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home">

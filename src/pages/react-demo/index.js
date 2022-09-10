@@ -58,7 +58,7 @@ const ReactDemo = () => {
           <div className={search}>
             <Search data={rickAndMortyData} />
           </div> 
-          <FeatureCharacter name={randomStarRickAndMorty.name} image={randomStarRickAndMorty.image} />
+          <FeatureCharacter details={randomStarRickAndMorty} />
           <button onClick={(e) => callNewRandomCharacter("rickAndMorty")}>Select random star</button>
         </div>        
       </div>
@@ -68,7 +68,7 @@ const ReactDemo = () => {
           <div className={search}>
             <Search data={finalSpaceData} />
           </div>
-          <FeatureCharacter name={randomStarFinalSpace.name} image={randomStarFinalSpace.img_url} />
+          <FeatureCharacter details={randomStarFinalSpace} />
           <button onClick={(e) => callNewRandomCharacter("finalSpace")}>Select random star</button>
         </div>        
       </div>
