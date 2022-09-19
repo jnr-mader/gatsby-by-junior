@@ -2,7 +2,7 @@ import * as React from "react";
 import { ReactSearchAutocomplete } from 'react-search-autocomplete';
 import { search, my } from './style.module.scss';
 
-const Search = ({data}) => {
+const Search = ({data, updateStar}) => {
     const handleOnSearch = (string, results) => {
         // onSearch will have as the first callback parameter
         // the string searched and for the second the results.
@@ -16,7 +16,7 @@ const Search = ({data}) => {
     
     const handleOnSelect = (item) => {
         // the item selected
-        // console.log(item)
+        updateStar(item)
     }
     
     const handleOnFocus = () => {

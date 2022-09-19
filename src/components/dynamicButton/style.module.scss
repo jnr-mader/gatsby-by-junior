@@ -1,0 +1,58 @@
+.add {
+    position: relative;
+    display: block;
+    margin: 100px auto 0;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 5px 8px 0 rgb(0 0 0 / 30%);
+    border: none;
+    border-radius: 5px;
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.add::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    top: -50px;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    background: url(./images/plus.svg) center burlywood no-repeat;
+    background-size: 30px;
+}
+
+.random {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 5px 8px 0 rgb(0 0 0 / 30%);
+    border: none;
+    border-radius: 5px;
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.random::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    top: -50px;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    background: url(./images/random.svg) center burlywood no-repeat;
+}

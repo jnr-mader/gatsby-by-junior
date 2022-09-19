@@ -20,3 +20,23 @@
         opacity: 1;
     }
 }
+
+.hero {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 500px;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.heroTitle {
+    top: 0;
+}

@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Layout from '../../components/layouts/demo-layout';
 import ReactDemoYaml from '../../../content/react-demo.yml';
-import { half, content, search, character } from './style.module.scss';
+import { half, content, search, hero, heroTitle } from './style.module.scss';
 import { rickAndMortyApi, finalSpaceApi } from '../../helpers/apis';
-import { ReactSearchAutocomplete } from 'react-search-autocomplete'
+// import { ReactSearchAutocomplete } from 'react-search-autocomplete'
 import Search from "../../components/search";
 import FeatureCharacter from "../../components/feature-character";
+import DynamicButton from "../../components/dynamicButton";
 
 const ReactDemo = () => {
   const [finalSpaceData, setFinalSpaceData] = useState([]);
@@ -48,28 +49,36 @@ const ReactDemo = () => {
     show === "finalSpace" ? setRandomNumberFinalSpace(callRandomCharacter(47)) : setRandomNumberRickAndMorty(callRandomCharacter(20))        
   }
 
+  function addToTeam(team) {
+    team === "finalSpace" ? alert("final") : alert("ricky")        
+  }
+
   return (
     <Layout pageTitle="React Demo">
-      {/* {ReactDemoYaml.title}
-      {ReactDemoYaml.intro} */}
+      <div className={hero}>        
+        <h2 className={heroTitle}>{ReactDemoYaml.title}</h2>
+        <p>{ReactDemoYaml.intro}</p>        
+      </div>
 
       <div className={half}>
         <div className={content}>
           <div className={search}>
-            <Search data={rickAndMortyData} />
+            <Search data={rickAndMortyData} updateStar={setRandomStarRickAndMorty}  />
           </div> 
           <FeatureCharacter details={randomStarRickAndMorty} />
-          <button onClick={(e) => callNewRandomCharacter("rickAndMorty")}>Select random star</button>
+          <DynamicButton onClick={(e) => callNewRandomCharacter("rickAndMorty")} text={"Select random star"} type={"random"} />
+          <DynamicButton onClick={(e) => addToTeam("rickAndMorty")} text={"Add to team Rick and Morty"} type={"add"} />
         </div>        
       </div>
 
       <div className={half}>
         <div className={content}>
           <div className={search}>
-            <Search data={finalSpaceData} />
+            <Search data={finalSpaceData} updateStar={setRandomStarFinalSpace} />
           </div>
           <FeatureCharacter details={randomStarFinalSpace} />
-          <button onClick={(e) => callNewRandomCharacter("finalSpace")}>Select random star</button>
+          <DynamicButton onClick={(e) => callNewRandomCharacter("finalSpace")} text={"Select random star"} buttonType={"random"} />
+          <DynamicButton onClick={(e) => addToTeam("finalSpace")} text={"Add to team Final Space"} buttonType={"add"} />
         </div>        
       </div>
     </Layout>    
